@@ -2,28 +2,21 @@ package com.rest.services.restfulservices.versioning;
 
 public class PersonV2 {
 
-	private String firstName;
-	private String lastName;
+	private Name name;
 	
 	PersonV2() {
 		
 	}
-	PersonV2(String firstName, String lastName) {
+	PersonV2(Name name) {
 		super();
-		this.firstName = firstName;
-		this.lastName = lastName;
+		this.name=name;
 	}
-	public String getFirstName() {
-		return firstName;
+
+	public Name getName() {
+		return name;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+
+	public void setName(Name name) {
+		this.name = name;
 	}
-	public String getLastName() {
-		return lastName;
-	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-	
 }
