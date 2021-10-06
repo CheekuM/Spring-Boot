@@ -2,11 +2,17 @@ package com.rest.services.restfulservices.user;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
 
+@Entity
 public class User {
-
+//Structure from log - create table user (id integer not null, date timestamp, name varchar(255), primary key (id))
+	@Id
+	@GeneratedValue
 	private Integer id;
 	
 	@Size(min = 2,message="Size not less than 2")
