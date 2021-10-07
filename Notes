@@ -23,6 +23,11 @@ Consumer First
 - Use best use of the Request Methods
 - Ensure sending proper response status
 - Ensure no secure info in URI
+- prefer using plurals
+- use nouns for resources
+- define a consistent approach for exceptions
+
+
 
 
 
