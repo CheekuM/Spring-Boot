@@ -1,0 +1,29 @@
+--Richardson Maturity Model--
+
+Level 0
+expose soap webservices in rest style
+    - It means url/ resource name should be kind of the activity which we need to perform with the api
+    For eg. Suppose we want to get the data - url should be named like this http://server/getData
+    Same for delete .. Url should be named like http://server/deleteData
+
+Level 1
+expose resources with proper URI
+    - http://server/accounts
+      http://server/accounts/10
+
+Level 2 = Level 1 + http methods
+
+Level 3 = Level 2 + Hateoas(data+next possible action)
+
+Best Practices
+Consumer First
+- Understand the naming of the customer
+- Have great documents for the api - Swagger
+- Make the best use of Http Method provides
+- Use best use of the Request Methods
+- Ensure sending proper response status
+- Ensure no secure info in URI
+
+
+
+
